@@ -2,7 +2,7 @@
 //  TableViewVC.swift
 //  Test0811_WeatherAppXib
 //
-//  Created by 侯懿玲 on 2021/8/14.
+//  Created by 侯懿玲 on 2021/8/11.
 //
 
 import UIKit
@@ -34,18 +34,36 @@ class TableViewVC: UIViewController {
         super.viewDidLoad()
         cityTableView.delegate = self
         cityTableView.dataSource = self
+//        self.cityTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cityCell")
         // TableView進行轉向的動作
         self.cityTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cityCell")
     }
+    
+//    @IBAction func btnA(_ sender: UIButton) {
+//        self.navigationController?.popViewController(animated: true)
+//        delegate.toA(AorB:"A")
+//
+//    }
+//    @IBAction func btnB(_ sender: UIButton) {
+//        self.navigationController?.popViewController(animated: true)
+//        delegate.toA(AorB:"B")
+//    }
+
 }
 
+//@objc protocol TableViewVCprotocol {
+//
+//    @objc func toA(AorB:String)
+//
+//
+//}
 @objc protocol TableViewVCprotocol {
 
     @objc func getWeatherData(locationName:String)
 
 }
-
 // MARK: - Table view data source
+
 extension TableViewVC: UITableViewDelegate,UITableViewDataSource{
     // tableView要顯示幾列
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,11 +80,12 @@ extension TableViewVC: UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     func numberOfSections(in tableView: UITableView) -> Int { return 1 }
-    
-    
 // MARK: - 使用者點選了TableView的第幾列
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("使用者點選了第 \(indexPath.row)項,grade＝ \(grade)")
+//        grade = indexPath.row
+        print("grade \(grade)")
+        print("使用者點選了 \(indexPath.row)")
         // 跳回MainVC
         self.navigationController?.popViewController(animated: true)
         delegate.getWeatherData(locationName: grade)

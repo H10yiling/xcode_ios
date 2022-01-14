@@ -2,18 +2,20 @@
 //  TableViewCell.swift
 //  Test0811_WeatherAppXib
 //
-//  Created by 侯懿玲 on 2021/8/14.
+//  Created by 侯懿玲 on 2021/8/12.
 //
 
 import UIKit
 
 class TableViewCell: UITableViewCell {
+
     
     @IBOutlet weak var cityName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
