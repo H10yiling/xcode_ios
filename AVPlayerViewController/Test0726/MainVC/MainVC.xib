@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="Test0726" customModuleProvider="target">
+            <connections>
+                <outlet property="btn1" destination="bMf-xP-voF" id="fBe-NU-bFQ"/>
+                <outlet property="btn2" destination="edd-Dg-mIQ" id="PPL-bG-acA"/>
+                <outlet property="btn3" destination="xDy-27-ZmH" id="Wgl-Ec-hPs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMf-xP-voF" userLabel="btn1">
+                    <rect key="frame" x="107" y="200" width="200" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="8PM-fw-DCr"/>
+                        <constraint firstAttribute="height" constant="50" id="ul0-DH-l3o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="DDS【INOPEM】1">
+                        <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapButtonWithBtn:" destination="-1" eventType="touchUpInside" id="SeO-yL-hF1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edd-Dg-mIQ" userLabel="btn2">
+                    <rect key="frame" x="107" y="423" width="200" height="50"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="aDn-lr-FUd"/>
+                        <constraint firstAttribute="height" constant="50" id="oxe-EJ-JkY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="DDS【INOPEM】2">
+                        <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapButtonWithBtn:" destination="-1" eventType="touchUpInside" id="pL5-IS-Jsi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDy-27-ZmH" userLabel="btn3">
+                    <rect key="frame" x="107" y="647" width="200" height="50"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="cWt-vu-JqS"/>
+                        <constraint firstAttribute="width" constant="200" id="d2R-hQ-O5R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="DDS【SWAG】">
+                        <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapButtonWithBtn:" destination="-1" eventType="touchUpInside" id="ilS-6f-4JY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.39024260344347772" green="0.44076607503737375" blue="0.27302130517618151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="edd-Dg-mIQ" firstAttribute="top" secondItem="bMf-xP-voF" secondAttribute="bottom" constant="173" id="3Js-UZ-KfH"/>
+                <constraint firstItem="edd-Dg-mIQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FRk-uo-8KP"/>
+                <constraint firstItem="bMf-xP-voF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Pa6-Pr-4qb"/>
+                <constraint firstItem="xDy-27-ZmH" firstAttribute="top" secondItem="bMf-xP-voF" secondAttribute="bottom" constant="397" id="QaD-oW-EoM"/>
+                <constraint firstItem="bMf-xP-voF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="107" id="SAC-Mi-w2y"/>
+                <constraint firstItem="bMf-xP-voF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.5" constant="1" id="V08-RA-3OX"/>
+                <constraint firstItem="xDy-27-ZmH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wip-p8-qiv"/>
+                <constraint firstItem="edd-Dg-mIQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iJc-Dk-fID"/>
+                <constraint firstItem="xDy-27-ZmH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.5" id="wDp-Ng-j0T"/>
+            </constraints>
+            <point key="canvasLocation" x="111.59420289855073" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
