@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="test1006_QRcode" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGn-AV-LS7">
+                    <rect key="frame" x="55.5" y="298.5" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="6no-bk-r7t"/>
+                        <constraint firstAttribute="width" constant="300" id="O73-hR-SFq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="eGn-AV-LS7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="55.710000000000001" id="A1z-Xp-6md"/>
+                <constraint firstItem="eGn-AV-LS7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="254.28999999999999" id="FYX-99-A7s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eGn-AV-LS7" secondAttribute="trailing" constant="58.289999999999999" id="UKb-Nt-dcq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eGn-AV-LS7" secondAttribute="bottom" constant="263.70999999999998" id="d1n-la-oIz"/>
+            </constraints>
+            <point key="canvasLocation" x="97" y="94"/>
+        </view>
+    </objects>
+</document>
