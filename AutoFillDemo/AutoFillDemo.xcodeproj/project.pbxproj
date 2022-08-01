@@ -10,6 +10,8 @@
 		0C315E6428865C2600035448 /* AddAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C315E6228865C2600035448 /* AddAccountVC.swift */; };
 		0C315E6528865C2600035448 /* AddAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C315E6328865C2600035448 /* AddAccountVC.xib */; };
 		0C315E672886AFB000035448 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C315E662886AFB000035448 /* UserPreferences.swift */; };
+		0C315E6A2897E66500035448 /* PasswordListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C315E692897E66500035448 /* PasswordListModel.swift */; };
+		0C315E6D2897E71400035448 /* PublicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C315E6C2897E71400035448 /* PublicClass.swift */; };
 		0C653F0E287FF51200640568 /* InputPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C653F0C287FF51200640568 /* InputPasswordVC.swift */; };
 		0C653F0F287FF51200640568 /* InputPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C653F0D287FF51200640568 /* InputPasswordVC.xib */; };
 		0C653F11287FF67B00640568 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C653F10287FF67B00640568 /* BaseVC.swift */; };
@@ -17,7 +19,6 @@
 		0C8930B228755C36004CD501 /* AutoFillVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8930B028755C36004CD501 /* AutoFillVC.xib */; };
 		0C8930B92875905F004CD501 /* AutoFillTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8930B72875905F004CD501 /* AutoFillTVC.swift */; };
 		0C8930BA2875905F004CD501 /* AutoFillTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8930B82875905F004CD501 /* AutoFillTVC.xib */; };
-		0C8930BC28759250004CD501 /* PasswordListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8930BB28759250004CD501 /* PasswordListModel.swift */; };
 		0C8930BD2876A39B004CD501 /* AutoFillTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8930B82875905F004CD501 /* AutoFillTVC.xib */; };
 		0C8930BE2876A3BF004CD501 /* AutoFillTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8930B72875905F004CD501 /* AutoFillTVC.swift */; };
 		0CF7D1372873F7C8001F50D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7D1362873F7C8001F50D0 /* AppDelegate.swift */; };
@@ -59,6 +60,8 @@
 		0C315E6228865C2600035448 /* AddAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountVC.swift; sourceTree = "<group>"; };
 		0C315E6328865C2600035448 /* AddAccountVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAccountVC.xib; sourceTree = "<group>"; };
 		0C315E662886AFB000035448 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		0C315E692897E66500035448 /* PasswordListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordListModel.swift; sourceTree = "<group>"; };
+		0C315E6C2897E71400035448 /* PublicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicClass.swift; sourceTree = "<group>"; };
 		0C653F0C287FF51200640568 /* InputPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordVC.swift; sourceTree = "<group>"; };
 		0C653F0D287FF51200640568 /* InputPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputPasswordVC.xib; sourceTree = "<group>"; };
 		0C653F10287FF67B00640568 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -66,7 +69,6 @@
 		0C8930B028755C36004CD501 /* AutoFillVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoFillVC.xib; sourceTree = "<group>"; };
 		0C8930B72875905F004CD501 /* AutoFillTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFillTVC.swift; sourceTree = "<group>"; };
 		0C8930B82875905F004CD501 /* AutoFillTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoFillTVC.xib; sourceTree = "<group>"; };
-		0C8930BB28759250004CD501 /* PasswordListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordListModel.swift; sourceTree = "<group>"; };
 		0CF7D1332873F7C8001F50D0 /* AutoFillDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoFillDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF7D1362873F7C8001F50D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CF7D1382873F7C8001F50D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,33 @@
 				0C315E6328865C2600035448 /* AddAccountVC.xib */,
 			);
 			path = AddAccountVC;
+			sourceTree = "<group>";
+		};
+		0C315E682897E64000035448 /* Data Struct */ = {
+			isa = PBXGroup;
+			children = (
+				0C315E692897E66500035448 /* PasswordListModel.swift */,
+			);
+			path = "Data Struct";
+			sourceTree = "<group>";
+		};
+		0C315E6B2897E6F700035448 /* Public Class */ = {
+			isa = PBXGroup;
+			children = (
+				0C315E6C2897E71400035448 /* PublicClass.swift */,
+			);
+			path = "Public Class";
+			sourceTree = "<group>";
+		};
+		0C315E6E2897E72A00035448 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C315E662886AFB000035448 /* UserPreferences.swift */,
+				0C653F10287FF67B00640568 /* BaseVC.swift */,
+				0C315E682897E64000035448 /* Data Struct */,
+				0C315E6B2897E6F700035448 /* Public Class */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0C653F0B287FF4CD00640568 /* InputPasswordVC */ = {
@@ -183,13 +212,11 @@
 		0CF7D1542873F7ED001F50D0 /* AutoFillTest */ = {
 			isa = PBXGroup;
 			children = (
-				0C315E6128865BD600035448 /* AddAccountVC */,
+				0C315E6E2897E72A00035448 /* Model */,
 				0C653F0B287FF4CD00640568 /* InputPasswordVC */,
-				0C8930B628759031004CD501 /* AutoFillTVC */,
 				0C8930B528759007004CD501 /* AutoFillVC */,
-				0C8930BB28759250004CD501 /* PasswordListModel.swift */,
-				0C315E662886AFB000035448 /* UserPreferences.swift */,
-				0C653F10287FF67B00640568 /* BaseVC.swift */,
+				0C8930B628759031004CD501 /* AutoFillTVC */,
+				0C315E6128865BD600035448 /* AddAccountVC */,
 				0CF7D15A2873F7ED001F50D0 /* Info.plist */,
 				0CF7D15B2873F7ED001F50D0 /* AutoFillTest.entitlements */,
 			);
@@ -315,9 +342,10 @@
 			files = (
 				0C653F0E287FF51200640568 /* InputPasswordVC.swift in Sources */,
 				0C315E672886AFB000035448 /* UserPreferences.swift in Sources */,
+				0C315E6A2897E66500035448 /* PasswordListModel.swift in Sources */,
 				0C8930B128755C36004CD501 /* AutoFillVC.swift in Sources */,
 				0C315E6428865C2600035448 /* AddAccountVC.swift in Sources */,
-				0C8930BC28759250004CD501 /* PasswordListModel.swift in Sources */,
+				0C315E6D2897E71400035448 /* PublicClass.swift in Sources */,
 				0C8930B92875905F004CD501 /* AutoFillTVC.swift in Sources */,
 				0C653F11287FF67B00640568 /* BaseVC.swift in Sources */,
 			);

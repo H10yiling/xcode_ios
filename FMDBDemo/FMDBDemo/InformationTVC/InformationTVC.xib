@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="InformationTVC" customModule="FMDBDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8A-FI-yPQ">
+                        <rect key="frame" x="20" y="12" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="It7-hl-GCH"/>
+                            <constraint firstAttribute="height" constant="20" id="ZLU-KY-hYZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQn-hr-Bwd">
+                        <rect key="frame" x="140" y="12" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Mwe-Ja-dUA"/>
+                            <constraint firstAttribute="height" constant="20" id="vS1-pz-6TT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="F8A-FI-yPQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="MrB-IN-X9l"/>
+                    <constraint firstItem="tQn-hr-Bwd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Q0H-T3-bSN"/>
+                    <constraint firstItem="tQn-hr-Bwd" firstAttribute="leading" secondItem="F8A-FI-yPQ" secondAttribute="trailing" constant="20" id="d7J-1v-XCP"/>
+                    <constraint firstItem="F8A-FI-yPQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lU6-cJ-LPS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbAccount" destination="F8A-FI-yPQ" id="8zH-2N-Ecg"/>
+                <outlet property="lbPassword" destination="tQn-hr-Bwd" id="fTO-kH-ubO"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="97"/>
+        </tableViewCell>
+    </objects>
+</document>
