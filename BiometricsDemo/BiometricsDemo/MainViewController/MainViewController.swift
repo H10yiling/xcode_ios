@@ -117,6 +117,10 @@ class MainViewController: UIViewController {
  Swift — 玩玩 Touch ID & FaceID 驗證
  https://medium.com/jeremy-xue-s-blog/swift-%E7%8E%A9%E7%8E%A9-touch-id-faceid-%E9%A9%97%E8%AD%89-d30be0ac803b
  
+ 
+ iOS 捷徑 App URL Scheme 清單
+ https://www.tech-girlz.com/2021/01/shortcuts-url-scheme.html
+ 
  Apple 設置的 iOS URL 方案的完整列表
  https://medium.com/@contact.jmeyers/complete-list-of-ios-url-schemes-for-apple-settings-always-updated-20871139d72f
  
