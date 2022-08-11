@@ -32,7 +32,7 @@ class MainViewController: UIViewController {
         // deviceOwnerAuthentication 支援 Face ID 、 Touch ID 驗證
         // deviceOwnerAuthenticationWithBiometrics 支援 Face ID 、 Touch ID 、 裝置密碼 驗證
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-        
+            
             // 描述使用身份辨識的原因
             let reason = "Log in to your account"
             
@@ -49,7 +49,8 @@ class MainViewController: UIViewController {
                     }
                 }
             }
-        } else {
+        }
+        else {
             if error?.localizedDescription == "Biometry is not enrolled." {
                 print("unset Face ID")
                 let alertController = UIAlertController(title: "Biometrics can't used", message: "please add Face ID", preferredStyle: .alert)
@@ -83,7 +84,7 @@ class MainViewController: UIViewController {
  這個 key 的值是系統在你的 App 首次嘗試使用 Face ID 時向用戶顯示的 String。
  此 String 應該清楚的解釋你的 App 需要訪問此身份驗證機制的原因。
  但 Touch ID 的部分，系統不需要另外加上類似的用法說明。
-
+ 
  LAPolicy type : Int
  支援 Face ID 、 Touch ID 驗證
  deviceOwnerAuthentication = 1
@@ -95,7 +96,7 @@ class MainViewController: UIViewController {
  若本身手機沒設 Face ID ，程式會自動使用密碼登入
  deviceOwnerAuthenticationWithBiometrics：
  若本身手機沒設 Face ID ，則會丟出 Failed Optional("Biometry is not enrolled.")
-
+ 
  Error事件：
  kLAErrorAuthenticationFailed = 驗證資訊出錯
  kLAErrorUserCancel = 使用者取消驗證
