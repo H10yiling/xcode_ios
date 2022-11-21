@@ -51,6 +51,7 @@ class MainViewController: UIViewController {
             }
         }
         else {
+            // 若使用者沒有設置生物辨識，會自動導向 設定 -> Face/Touch ID & Passcode
             if error?.localizedDescription == "Biometry is not enrolled." {
                 print("unset Face ID")
                 let alertController = UIAlertController(title: "Biometrics can't used", message: "please add Face ID", preferredStyle: .alert)
