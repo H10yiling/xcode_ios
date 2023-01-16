@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CFDB8F82951996800BD58EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDB8F72951996800BD58EC /* AppDelegate.swift */; };
+		0CFDB8FA2951996800BD58EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDB8F92951996800BD58EC /* SceneDelegate.swift */; };
+		0CFDB9012951996A00BD58EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CFDB9002951996A00BD58EC /* Assets.xcassets */; };
+		0CFDB9042951996A00BD58EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFDB9022951996A00BD58EC /* LaunchScreen.storyboard */; };
+		0CFDB90F2951996A00BD58EC /* PercentageCalculatorTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDB90E2951996A00BD58EC /* PercentageCalculatorTestsTests.swift */; };
+		0CFDB9192951996A00BD58EC /* PercentageCalculatorTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDB9182951996A00BD58EC /* PercentageCalculatorTestsUITests.swift */; };
+		0CFDB91B2951996A00BD58EC /* PercentageCalculatorTestsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDB91A2951996A00BD58EC /* PercentageCalculatorTestsUITestsLaunchTests.swift */; };
+		0CFDB92A29519A9D00BD58EC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDB92829519A9D00BD58EC /* MainViewController.swift */; };
+		0CFDB92B29519A9D00BD58EC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CFDB92929519A9D00BD58EC /* MainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CFDB90B2951996A00BD58EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CFDB8EC2951996800BD58EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CFDB8F32951996800BD58EC;
+			remoteInfo = PercentageCalculatorTests;
+		};
+		0CFDB9152951996A00BD58EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CFDB8EC2951996800BD58EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CFDB8F32951996800BD58EC;
+			remoteInfo = PercentageCalculatorTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CFDB8F42951996800BD58EC /* PercentageCalculatorTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PercentageCalculatorTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFDB8F72951996800BD58EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CFDB8F92951996800BD58EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0CFDB9002951996A00BD58EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CFDB9032951996A00BD58EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CFDB9052951996A00BD58EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CFDB90A2951996A00BD58EC /* PercentageCalculatorTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PercentageCalculatorTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFDB90E2951996A00BD58EC /* PercentageCalculatorTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageCalculatorTestsTests.swift; sourceTree = "<group>"; };
+		0CFDB9142951996A00BD58EC /* PercentageCalculatorTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PercentageCalculatorTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFDB9182951996A00BD58EC /* PercentageCalculatorTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageCalculatorTestsUITests.swift; sourceTree = "<group>"; };
+		0CFDB91A2951996A00BD58EC /* PercentageCalculatorTestsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageCalculatorTestsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0CFDB92829519A9D00BD58EC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0CFDB92929519A9D00BD58EC /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CFDB8F12951996800BD58EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDB9072951996A00BD58EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDB9112951996A00BD58EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CFDB8EB2951996800BD58EC = {
+			isa = PBXGroup;
+			children = (
+				0CFDB8F62951996800BD58EC /* PercentageCalculatorTests */,
+				0CFDB90D2951996A00BD58EC /* PercentageCalculatorTestsTests */,
+				0CFDB9172951996A00BD58EC /* PercentageCalculatorTestsUITests */,
+				0CFDB8F52951996800BD58EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CFDB8F52951996800BD58EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CFDB8F42951996800BD58EC /* PercentageCalculatorTests.app */,
+				0CFDB90A2951996A00BD58EC /* PercentageCalculatorTestsTests.xctest */,
+				0CFDB9142951996A00BD58EC /* PercentageCalculatorTestsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CFDB8F62951996800BD58EC /* PercentageCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CFDB92729519A7900BD58EC /* MainViewController */,
+				0CFDB8F72951996800BD58EC /* AppDelegate.swift */,
+				0CFDB8F92951996800BD58EC /* SceneDelegate.swift */,
+				0CFDB9002951996A00BD58EC /* Assets.xcassets */,
+				0CFDB9022951996A00BD58EC /* LaunchScreen.storyboard */,
+				0CFDB9052951996A00BD58EC /* Info.plist */,
+			);
+			path = PercentageCalculatorTests;
+			sourceTree = "<group>";
+		};
+		0CFDB90D2951996A00BD58EC /* PercentageCalculatorTestsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CFDB90E2951996A00BD58EC /* PercentageCalculatorTestsTests.swift */,
+			);
+			path = PercentageCalculatorTestsTests;
+			sourceTree = "<group>";
+		};
+		0CFDB9172951996A00BD58EC /* PercentageCalculatorTestsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0CFDB9182951996A00BD58EC /* PercentageCalculatorTestsUITests.swift */,
+				0CFDB91A2951996A00BD58EC /* PercentageCalculatorTestsUITestsLaunchTests.swift */,
+			);
+			path = PercentageCalculatorTestsUITests;
+			sourceTree = "<group>";
+		};
+		0CFDB92729519A7900BD58EC /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0CFDB92829519A9D00BD58EC /* MainViewController.swift */,
+				0CFDB92929519A9D00BD58EC /* MainViewController.xib */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CFDB8F32951996800BD58EC /* PercentageCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CFDB91E2951996A00BD58EC /* Build configuration list for PBXNativeTarget "PercentageCalculatorTests" */;
+			buildPhases = (
+				0CFDB8F02951996800BD58EC /* Sources */,
+				0CFDB8F12951996800BD58EC /* Frameworks */,
+				0CFDB8F22951996800BD58EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PercentageCalculatorTests;
+			productName = PercentageCalculatorTests;
+			productReference = 0CFDB8F42951996800BD58EC /* PercentageCalculatorTests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CFDB9092951996A00BD58EC /* PercentageCalculatorTestsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CFDB9212951996A00BD58EC /* Build configuration list for PBXNativeTarget "PercentageCalculatorTestsTests" */;
+			buildPhases = (
+				0CFDB9062951996A00BD58EC /* Sources */,
+				0CFDB9072951996A00BD58EC /* Frameworks */,
+				0CFDB9082951996A00BD58EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CFDB90C2951996A00BD58EC /* PBXTargetDependency */,
+			);
+			name = PercentageCalculatorTestsTests;
+			productName = PercentageCalculatorTestsTests;
+			productReference = 0CFDB90A2951996A00BD58EC /* PercentageCalculatorTestsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0CFDB9132951996A00BD58EC /* PercentageCalculatorTestsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CFDB9242951996A00BD58EC /* Build configuration list for PBXNativeTarget "PercentageCalculatorTestsUITests" */;
+			buildPhases = (
+				0CFDB9102951996A00BD58EC /* Sources */,
+				0CFDB9112951996A00BD58EC /* Frameworks */,
+				0CFDB9122951996A00BD58EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CFDB9162951996A00BD58EC /* PBXTargetDependency */,
+			);
+			name = PercentageCalculatorTestsUITests;
+			productName = PercentageCalculatorTestsUITests;
+			productReference = 0CFDB9142951996A00BD58EC /* PercentageCalculatorTestsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CFDB8EC2951996800BD58EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					0CFDB8F32951996800BD58EC = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					0CFDB9092951996A00BD58EC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 0CFDB8F32951996800BD58EC;
+					};
+					0CFDB9132951996A00BD58EC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 0CFDB8F32951996800BD58EC;
+					};
+				};
+			};
+			buildConfigurationList = 0CFDB8EF2951996800BD58EC /* Build configuration list for PBXProject "PercentageCalculatorTests" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CFDB8EB2951996800BD58EC;
+			productRefGroup = 0CFDB8F52951996800BD58EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CFDB8F32951996800BD58EC /* PercentageCalculatorTests */,
+				0CFDB9092951996A00BD58EC /* PercentageCalculatorTestsTests */,
+				0CFDB9132951996A00BD58EC /* PercentageCalculatorTestsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CFDB8F22951996800BD58EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFDB9042951996A00BD58EC /* LaunchScreen.storyboard in Resources */,
+				0CFDB9012951996A00BD58EC /* Assets.xcassets in Resources */,
+				0CFDB92B29519A9D00BD58EC /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDB9082951996A00BD58EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDB9122951996A00BD58EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CFDB8F02951996800BD58EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFDB8F82951996800BD58EC /* AppDelegate.swift in Sources */,
+				0CFDB8FA2951996800BD58EC /* SceneDelegate.swift in Sources */,
+				0CFDB92A29519A9D00BD58EC /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDB9062951996A00BD58EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFDB90F2951996A00BD58EC /* PercentageCalculatorTestsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFDB9102951996A00BD58EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFDB91B2951996A00BD58EC /* PercentageCalculatorTestsUITestsLaunchTests.swift in Sources */,
+				0CFDB9192951996A00BD58EC /* PercentageCalculatorTestsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CFDB90C2951996A00BD58EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CFDB8F32951996800BD58EC /* PercentageCalculatorTests */;
+			targetProxy = 0CFDB90B2951996A00BD58EC /* PBXContainerItemProxy */;
+		};
+		0CFDB9162951996A00BD58EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CFDB8F32951996800BD58EC /* PercentageCalculatorTests */;
+			targetProxy = 0CFDB9152951996A00BD58EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CFDB9022951996A00BD58EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CFDB9032951996A00BD58EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CFDB91C2951996A00BD58EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CFDB91D2951996A00BD58EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CFDB91F2951996A00BD58EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PercentageCalculatorTests/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.PercentageCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CFDB9202951996A00BD58EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PercentageCalculatorTests/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.PercentageCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0CFDB9222951996A00BD58EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.PercentageCalculatorTestsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PercentageCalculatorTests.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PercentageCalculatorTests";
+			};
+			name = Debug;
+		};
+		0CFDB9232951996A00BD58EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.PercentageCalculatorTestsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PercentageCalculatorTests.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PercentageCalculatorTests";
+			};
+			name = Release;
+		};
+		0CFDB9252951996A00BD58EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.PercentageCalculatorTestsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PercentageCalculatorTests;
+			};
+			name = Debug;
+		};
+		0CFDB9262951996A00BD58EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.PercentageCalculatorTestsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PercentageCalculatorTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CFDB8EF2951996800BD58EC /* Build configuration list for PBXProject "PercentageCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CFDB91C2951996A00BD58EC /* Debug */,
+				0CFDB91D2951996A00BD58EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CFDB91E2951996A00BD58EC /* Build configuration list for PBXNativeTarget "PercentageCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CFDB91F2951996A00BD58EC /* Debug */,
+				0CFDB9202951996A00BD58EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CFDB9212951996A00BD58EC /* Build configuration list for PBXNativeTarget "PercentageCalculatorTestsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CFDB9222951996A00BD58EC /* Debug */,
+				0CFDB9232951996A00BD58EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CFDB9242951996A00BD58EC /* Build configuration list for PBXNativeTarget "PercentageCalculatorTestsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CFDB9252951996A00BD58EC /* Debug */,
+				0CFDB9262951996A00BD58EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CFDB8EC2951996800BD58EC /* Project object */;
+}
