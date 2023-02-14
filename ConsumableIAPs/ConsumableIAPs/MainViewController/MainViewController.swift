@@ -71,3 +71,10 @@ extension MainViewController: AddCoinProtocol {
         myMoneyLabel.text = "\(myMoney)"
     }
 }
+
+// MARK: - 參考資料
+/*
+ 不用利用App Store Connect創建商品以及不需要沙盒 (sandbox) 使用者跟網路就可以在xcode完成內購的測試
+ https://badgameshow.com/7hong/2021/07/12/swift-storekit/
+ */
+

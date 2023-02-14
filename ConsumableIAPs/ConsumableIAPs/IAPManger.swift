@@ -8,7 +8,7 @@
 import Foundation
 import StoreKit
 
-final class IAPManger: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObserver {
+final class IAPManger: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObserver{
     
     static let shared = IAPManger()
     
@@ -36,7 +36,8 @@ final class IAPManger: NSObject, SKProductsRequestDelegate, SKPaymentTransaction
         }
     }
     
-    
+    // SKProductsRequestDelegate
+    // step 1
     public func fetchProducts() {
         let request = SKProductsRequest(
             productIdentifiers: Set(Product.allCases.compactMap({ $0.rawValue}))
@@ -44,12 +45,13 @@ final class IAPManger: NSObject, SKProductsRequestDelegate, SKPaymentTransaction
         request.delegate = self
         request.start()
     }
-    
+    // step 2
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         print("內購產品總數： ", response.products.count)
         self.products = response.products
     }
     
+    // SKPaymentTransactionObserver
     public func purchase(product: Product, completion: @escaping ((Int)-> Void)) {
         guard SKPaymentQueue.canMakePayments() else {
             return
@@ -66,6 +68,7 @@ final class IAPManger: NSObject, SKProductsRequestDelegate, SKPaymentTransaction
     }
     
     // 更新交易
+    // step 3 按下 "button"、按下 "取消/購買"
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         transactions.forEach ({
             switch $0.transactionState {
