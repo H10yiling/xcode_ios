@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubscriptionViewController" customModule="InAppPurchase_test10" customModuleProvider="target">
             <connections>
+                <outlet property="checkAppStoreButton" destination="f9x-TP-xiu" id="sB8-OW-7Xx"/>
                 <outlet property="oneYearButton" destination="Y32-1D-Glt" id="EdG-wj-2JH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,21 +21,35 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y32-1D-Glt">
-                    <rect key="frame" x="20" y="402" width="353" height="48"/>
+                    <rect key="frame" x="20" y="401" width="353" height="50"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Button">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                    </buttonConfiguration>
                     <connections>
                         <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="JC1-TK-hOJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-TP-xiu">
+                    <rect key="frame" x="40" y="461" width="313" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                    <connections>
+                        <action selector="presentAppStore:" destination="-1" eventType="touchUpInside" id="5Dh-2e-Nzt"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="f9x-TP-xiu" firstAttribute="top" secondItem="Y32-1D-Glt" secondAttribute="bottom" constant="10" id="BJq-PE-Y1M"/>
                 <constraint firstItem="Y32-1D-Glt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Ddf-IN-d21"/>
                 <constraint firstItem="Y32-1D-Glt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hu2-hk-Rr5"/>
+                <constraint firstItem="f9x-TP-xiu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="jxz-zm-Yfc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Y32-1D-Glt" secondAttribute="trailing" constant="20" id="mUP-wj-HQm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f9x-TP-xiu" secondAttribute="trailing" constant="40" id="xb8-yw-PfK"/>
             </constraints>
             <point key="canvasLocation" x="-2" y="20"/>
         </view>

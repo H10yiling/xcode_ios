@@ -28,9 +28,9 @@ public class IAPManager: NSObject {
         self.purchasedProductIDs = productIDs.filter { productID in
             let purchased = UserDefaults.standard.bool(forKey: productID)
             if purchased {
-                print("Previously purchased 先前購買: \(productID)")
+                print("先前購買 Previously purchased: \(productID)")
             } else {
-                print("Not purchased 未購買: \(productID)")
+                print("未購買 Not purchased: \(productID)")
             }
             return purchased
         }
@@ -120,7 +120,16 @@ extension IAPManager: SKPaymentTransactionObserver {
     
     // 購買、復原成功與否的 protocol
     public func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+        var transactionArray = [SKPaymentTransaction]()
         for transaction in transactions {
+            transaction.original?.transactionIdentifier
+            print("original_transactionIdentifier: \(transaction.original?.transactionIdentifier)\n",
+                  "transactionIdentifier: \(transaction.transactionIdentifier)\n",      // 唯一標識成功支付交易的字符串
+                  "productID: \(transaction.original?.payment.productIdentifier)\n",    // 用於標識可從您的應用內購買的產品的字符串
+                  "transactionDate: \(transaction.transactionDate)\n",                  // 交易添加到 App Store 支付的日期
+                  "transactionState: \(transaction.transactionState)\n"                 // 交易的當前狀態
+            )
+
             switch (transaction.transactionState) {
             case .purchased:
                 complete(transaction: transaction)
@@ -141,8 +150,17 @@ extension IAPManager: SKPaymentTransactionObserver {
         }
     }
     
+    /// 已購買的
+    ///
+    ///     ios.InAppPurchaseTest10.storeDatas: 產品ID
+    ///     ios.InAppPurchaseTest10.storeDatas: 產品ID
     private func complete(transaction: SKPaymentTransaction) {
-        print("complete...")
+        /*
+        print("complete...\npaymentDiscount: \(String(describing: transaction.payment.paymentDiscount))\n", // 適用於付款的折扣優惠詳情
+              "applicationUsername: \(String(describing: transaction.payment.applicationUsername))\n",      // 將交易與您服務上的用戶帳戶相關聯的字符串
+              "requestData: \(String(describing: transaction.payment.requestData))\n"                       // 保留以供將來使用(默認值為nil。如果不是，您的付款請求將被拒絕)
+        )
+        */
         
         productPurchaseCompleted(identifier: transaction.payment.productIdentifier)
         
@@ -243,3 +261,16 @@ extension IAPManager: SKPaymentTransactionObserver {
     }
 }
 
+// MARK: -
+/*
+productID: (transaction.original?.payment.productIdentifier)    // 用於標識可從您的應用內購買的產品的字符串
+transactionIdentifier: transaction.transactionIdentifier)       // 唯一標識成功支付交易的字符串
+transactionDate: transaction.transactionDate)                   // 交易添加到 App Store 支付的日期
+transactionState: transaction.transactionState)                 // 交易的當前狀態
+ 
+transaction: SKPaymentTransaction
+paymentDiscount: transaction.payment.paymentDiscount            // 適用於付款的折扣優惠詳情
+applicationUsername: transaction.payment.applicationUsername    // 將交易與您服務上的用戶帳戶相關聯的字符串
+requestData: transaction.payment.requestData                    // 保留以供將來使用(默認值為nil。如果不是，您的付款請求將被拒絕)
+
+ */

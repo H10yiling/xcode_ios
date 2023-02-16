@@ -12,6 +12,7 @@ class SubscriptionViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var oneYearButton: UIButton!
+    @IBOutlet weak var checkAppStoreButton: UIButton!
     
     // MARK: - Instance Properties
     var products: [SKProduct] = []
@@ -19,9 +20,26 @@ class SubscriptionViewController: UIViewController {
     // MARK: - Vie Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUI()
+        productsStatus()    // 讀取產品資訊
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    private func setUI() {
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.tintColor = .purple
+        self.navigationController?.title = "訂閱"
+        oneYearButton.setTitle("訂閱一年", for: .normal)
+        oneYearButton.setTitleColor(.purple, for: .normal)
+        checkAppStoreButton.setTitle("查看 APP Store 訂閱狀態", for: .normal)
+        checkAppStoreButton.setTitleColor(.black, for: .normal)
+    }
+    
+    private func productsStatus() {
         // 確認是否有產品能被訂閱
         SubscriptionProgram.storeSubscription.requestProducts { [weak self] success, products in
             guard let self = self else { return }
@@ -39,24 +57,11 @@ class SubscriptionViewController: UIViewController {
         }
         
         //檢查用戶購買的種類
-        if (SubscriptionProgram.storeSubscription.isProductPurchased(SubscriptionProgram.yearlySub)) {
+        if (SubscriptionProgram.storeSubscription.isProductPurchased(SubscriptionProgram.yearlySub) || SubscriptionProgram.storeSubscription.isProductPurchased(SubscriptionProgram.oneYearSub)) {
             print("已訂閱 -> 訂閱一年")
-            
         } else {
             print("未訂閱")
         }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.tabBarController?.tabBar.isHidden = true
-    }
-    
-    func setUI() {
-        self.navigationController?.isNavigationBarHidden = false
-        self.navigationController?.navigationBar.tintColor = .purple
-        self.navigationController?.title = "訂閱"
-        oneYearButton.setTitle("訂閱一年", for: .normal)
-        oneYearButton.setTitleColor(.purple, for: .normal)
     }
     
     @IBAction func clickButton(_ sender: UIButton) {
@@ -76,10 +81,25 @@ class SubscriptionViewController: UIViewController {
         }
     }
     
+    @IBAction func presentAppStore(_ sender: UIButton) {
+        if let window = UIApplication.shared.connectedScenes.first {
+            Task {
+                do {
+                    try await AppStore.showManageSubscriptions(in: window as! UIWindowScene)
+                    print("deviceVerificationID: ", AppStore.deviceVerificationID)
+                    try? await print("deviceVerificationID: ", AppTransaction.shared.jwsRepresentation)
+                } catch {
+                    print(error)
+                }
+            }
+        }
+    }
     /// 購買所選的產品
     private func purchaseItemIndex(index: Int) {
+        CommandBase.sharedInstance.showActivityIndicatorView(uiView: self.view)
+        
         SubscriptionProgram.storeSubscription.buyProduct(products[index]) { [weak self] success, productId in
-
+            
             guard let self = self else { return }
             guard success else {
                 DispatchQueue.main.async {
@@ -88,10 +108,12 @@ class SubscriptionViewController: UIViewController {
                                                             preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "OK", style: .default))
                     self.present(alertController, animated: true, completion: nil)
+                    CommandBase.sharedInstance.removeActivityIndicatorView(uiView: self.view)
                 }
                 return
             }
             print("訂閱一年 success")
+            CommandBase.sharedInstance.removeActivityIndicatorView(uiView: self.view)
         }
     }
 }

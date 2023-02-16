@@ -33,7 +33,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         setupTableViewCell()    // 設定 TableView
         setUI()                 // 設定 MainViewController UI
-        getProducts()           // 讀取產品資訊
+        productsStatus()           // 讀取產品資訊
         purchasedProducts()     // 讀取已購買的資訊
     }
     
@@ -65,7 +65,7 @@ class MainViewController: UIViewController {
     }
     
     /// 讀取產品資訊
-    private func getProducts() {
+    private func productsStatus() {
         // 加入旋轉動畫
         CommandBase.sharedInstance.showActivityIndicatorView(uiView: self.view)
         
@@ -113,7 +113,22 @@ class MainViewController: UIViewController {
     ///     - orderID: 訂單編號
     ///     - expirationDate: 有效期限
     private func purchasedProducts(){
+        // Get the receipt if it's available.
         
+        // appStoreReceiptURL: file:///private/var/mobile/Containers/Data/Application/407B8D95-FEB9-4220-819B-615014F19F1F/StoreKit/sandboxReceipt
+        if let appStoreReceiptURL = Bundle.main.appStoreReceiptURL,
+           FileManager.default.fileExists(atPath: appStoreReceiptURL.path) {
+            
+            do {
+                let receiptData = try Data(contentsOf: appStoreReceiptURL, options: .alwaysMapped)
+                print(receiptData)
+                
+                let receiptString = receiptData.base64EncodedString(options: [])
+                
+                // Read receiptData.
+            }
+            catch { print("Couldn't read receipt data with error: " + error.localizedDescription) }
+        }
     }
     
     @IBAction func gotoSubscriptionVC(_ sender: UIButton) {
@@ -163,7 +178,6 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
                                                            for: indexPath) as? IAPurchaseItemsTableViewCell else {
                 fatalError("IAPurchaseItemsTableViewCell 載入失敗")
             }
-            
             
             // 確認是否有產品能被訂閱
             guard !productsArray.isEmpty else {
